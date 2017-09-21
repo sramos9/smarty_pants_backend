@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-  before_action  only: [ :index, :show, :update]
-#, :destroy
+  before_action  only: [ :index, :show, :update, :destroy]
+
 
   # GET /posts
   def index
@@ -39,9 +39,9 @@ class PostsController < ApplicationController
   end
 
   # DELETE /posts/1
-  # def destroy
-  #   @post.destroy
-  # end
+  def destroy
+    @post.destroy
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
