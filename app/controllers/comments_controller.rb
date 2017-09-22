@@ -39,6 +39,7 @@ class CommentsController < ApplicationController
 
   # DELETE /comments/1
   def destroy
+    @comment = Comment.find(params[:id])
     @comment.destroy
   end
 
