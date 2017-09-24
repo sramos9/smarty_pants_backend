@@ -30,6 +30,8 @@ class CommentsController < ApplicationController
 
   # PATCH/PUT /comments/1
   def update
+    @comment = Comment.find(params[:id])
+
     if @comment.update(comment_params)
       render json: @comment
     else
@@ -51,6 +53,6 @@ class CommentsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def comment_params
-      params.require(:comment).permit(:username, :addComment, :post_id)
+      params.require(:comment).permit(:username, :user_id, :addComment, :post_id)
     end
 end
