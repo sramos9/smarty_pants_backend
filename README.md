@@ -1,24 +1,42 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SMARTY PANTS
 
-Things you may want to cover:
+* Newsy App for busy people who want a condensed list of the most recent articles across multiple publications
 
-* Ruby version
+USE THE APP HERE - https://smartypantsnews.herokuapp.com/
 
-* System dependencies
+![Imgur](https://i.imgur.com/DXWuTLd.png)
 
-* Configuration
+* Always stay current with Smarty Pants, which only shows the most current news stories from over 70 worldwide sources.
+https://newsapi.org/
 
-* Database creation
+![Imgur](https://i.imgur.com/9dEOS5j.png)
 
-* Database initialization
 
-* How to run the test suite
+* You can discuss the articles my submitting a Post to the discussion board, without being a registered user.
 
-* Services (job queues, cache servers, search engines, etc.)
+![Imgur](https://i.imgur.com/OPR81Vf.png)
 
-* Deployment instructions
+* Registered users are able to comment on posts in the discussion board, as well as edit or delete their comments.
 
-* ...
+* BUILT WITH:
+Ruby on Rails
+Angular
+Node
+Postgresql
+News API for news data
+
+* Key Functions
+ - JWT Authentication, only users can edit/delete their comments
+ - News API data using JSON
+ - Responsive
+ - Content always changes but Article title in posts and comments will be stored.
+
+ * Future Goals
+ - JWT for Posts
+ - Like button on posts/comments
+ - Save/archive articles
+ - Newsletter capability
+
+ Samantha Ramos, September 2017
